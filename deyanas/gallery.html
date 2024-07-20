@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="gallery.css" />
+
+    <style>
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        .row {
+          flex-direction: column;
+        }
+
+        .column {
+          width: 100%;
+        }
+
+        .image {
+          width: 80%;
+          height: auto;
+        }
+
+        .hoverImage {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+
+    <title>LifeOnLand</title>
+  </head>
+
+  <body>
+    <header>
+      <p><img src="earth.png" alt="" />LIFE ON LAND</p>
+
+      <ul class="navbar">
+        <li>
+          <a href="../aqeel/home.html">home </a>
+        </li>
+        <li>
+          <a href="gallery.html" class="active">gallery </a>
+        </li>
+        <li>
+          <a href="../Saji CW/Shop.html">shop </a>
+        </li>
+        <li>
+          <a href="sitemap.html">sitemap </a>
+        </li>
+        <li>
+          <a href="../aqeel/feedback.html">feedback </a>
+        </li>
+        <li>
+          <a href="../imad/team.html">team </a>
+        </li>
+        <li>
+          <a href="../imad/userProfile.html">profile </a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="wrapper">
+        <p id="title">GALLERY</p>
+
+        <div class="formStyle">
+          <div style="text-align: center">
+            FOR TEXT SIZE:
+
+            <label>
+              <input type="radio" name="tx" value="xsmall" />
+              X-SMALL
+            </label>
+
+            <label>
+              <input type="radio" name="tx" value="small" />
+              SMALL
+            </label>
+
+            <label>
+              <input type="radio" name="tx" value="medium" checked />
+              MEDIUM
+            </label>
+
+            <label>
+              <input type="radio" name="tx" value="large" />
+              LARGE
+            </label>
+
+            <label>
+              <input type="radio" name="tx" value="xlarge" />
+              X-LARGE
+            </label>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <div class="row">
+            <h2 class="shadow" style="font-size: 20px">
+              SCROLL UP AND THEN<br />
+              MOVE THE CURSOR TO THUMBNAILS TO EXPLORE NATURE ENVIRONMENT
+            </h2>
+            <img
+              src="image1.png"
+              alt="END DEFORESTATION AND RESTORE DEGRADED FORESTS"
+              onmouseover="showAdditionalContent(1)"
+              onmouseout="hideAdditionalContent(1)"
+              class="image"
+            />
+            <img
+              src="image2.png"
+              alt="ELIMINATE POACHING AND TRAFFICKING OF PROTECTED SPECIES"
+              onmouseover="showAdditionalContent(2)"
+              onmouseout="hideAdditionalContent(2)"
+              class="image"
+            />
+            <img
+              src="image3.png"
+              alt="PROTECT BIODIVERSITY AND NATURAL HABITATS"
+              onmouseover="showAdditionalContent(3)"
+              onmouseout="hideAdditionalContent(3)"
+              class="image"
+            />
+          </div>
+
+          <div class="hover" id="hover-1">
+            <div class="row">
+              <div class="column">
+                <img
+                  src="image1.png"
+                  alt="END DEFORESTATION AND RESTORE DEGRADED FORESTS"
+                  class="hoverImage"
+                />
+              </div>
+
+              <div class="column">
+                <p class="shadow">
+                  <strong class="Tcolor"
+                    >END DEFORESTATION AND RESTORE DEGRADED FORESTS</strong
+                  >
+                  <br /><br />
+                  End deforestation and restore degraded forests to protect our
+                  <br />
+                  planet's health.Forests are crucial for maintaining
+                  biodiversity,<br />
+                  the climate, and providing resources. Deforestation and forest
+                  <br />
+                  degradation threaten these vital ecosystems, leading to
+                  species<br />
+                  loss, climate instability, and resource depletion. By stopping
+                  <br />
+                  deforestation and rehabilitating degraded forests, we can
+                  preserve<br />
+                  wildlife, ensure sustainable resources, and mitigate climate
+                  change<br />
+                  impacts, securing a healthier environment for future
+                  generations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hover" id="hover-2">
+            <div class="row">
+              <div class="column">
+                <img
+                  src="image2.png"
+                  alt="ELIMINATE POACHING AND TRAFFICKING OF PROTECTED SPECIES"
+                  class="hoverImage"
+                />
+              </div>
+
+              <div class="column">
+                <p class="shadow">
+                  <strong class="Tcolor"
+                    >ELIMINATE POACHING AND TRAFFICKING OF <br />PROTECTED
+                    SPECIES</strong
+                  >
+                  <br /><br />
+                  Eliminating poaching and trafficking of protected species is
+                  critical<br />
+                  for preserving biodiversity.illegal huntig and trading of
+                  wildlife<br />
+                  threaten endangered species anddisrupt ecosystems. By
+                  enforcing strict<br />
+                  laws and raising awareness, we can protect these vulunerable
+                  animals<br />
+                  and ensure their survival for future generations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hover" id="hover-3">
+            <div class="row">
+              <div class="column">
+                <img
+                  src="image3.png"
+                  alt="PROTECT BIODIVERSITY AND NATURAL HABITATS"
+                  class="hoverImage"
+                />
+              </div>
+
+              <div class="column">
+                <p class="shadow">
+                  <strong class="Tcolor"
+                    >PROTECT BIODIVERSITY AND NATURAL HABITATS</strong
+                  >
+                  <br /><br />
+                  Protecting biodiversity and natural habitats is essential
+                  for<br />
+                  maintaining healthy ecosystems. Diverse species and intact
+                  habitats<br />
+                  support ecological balance, provide resources, and enhance
+                  resilience<br />
+                  to environmental changes. By conserving these natural
+                  treasures, we<br />
+                  ensure the well-being of our planet and future generations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="space"></div>
+
+        <script src="gallery.js"></script>
+
+        <footer class="footer">
+          <div class="footer-container">
+            <div class="footer-section about">
+              <h2>About Us</h2>
+              <p>
+                We are dedicated to promoting sustainability and the
+                conservation of terrestrial ecosystems. Join us in making a
+                positive impact on our planet.
+              </p>
+            </div>
+            <div class="footer-section contact">
+              <h2>Contact Us</h2>
+              <p>Email: support@land.com</p>
+              <p>Phone: +982255252252</p>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            &copy; 2024 LIFEONLAND| Designed by
+            <a href="Page_editor.html">K. Deyanas Hashin</a>
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <script src="common/common.js"></script>
+  </body>
+</html>

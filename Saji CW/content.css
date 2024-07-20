@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+  background:linear-gradient(to right, rgb(165, 243, 182), rgb(128, 228, 161),rgb(50, 227, 115)); 
+}
+
+.content-info {
+    margin: 0 75px;
+}
+
+.content-info h1 {
+    padding-bottom: 25px;
+    color: #0c4e0f;
+}
+
+.content-links{
+    margin-top: 50px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 20px;
+    background:#d3f4d4;
+    font-size: 15px; 
+    font-weight: 600;
+}
+
+.content-links a{
+    color: black;
+}
+
+.content-links a:hover{
+    font-size: 16px;
+}
+
+.content{
+    display: flex;
+    margin: 30px 20px;
+    height: 300px;
+    color: black;
+    padding: 20px 50px;
+    border-radius: 25px;
+}
+
+.content p{
+    text-align: justify;
+    padding: 10px 0px;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.content1 p{
+    padding-left: 50px;
+}
+
+.content1-para h1{
+    padding-left: 50px;
+}
+
+.content2 p{
+    padding-right: 50px;
+}
+
+.content3 {
+    color: black;
+    margin: 30px 70px;
+    background: linear-gradient(to right,#d3f4d4,#1ace20);
+    padding: 50px 50px;
+    font-size: 15px;
+}
+
+.content3 h1 {
+    color: black;
+}
+
+.content3 ul {
+    padding-left: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: black;
+    line-height: 40px;
+}
+
+.hr_in{
+    background-color: #d3f4d4;
+}
+
+.content4{
+    padding-left: 70px;
+    padding-top: 25px;
+    color: white;
+}
+
+.content5{
+    color: white;
+    padding: 70px;
+    padding-top: 25px;
+}
+
+.gallery-pics{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding:0px 175px;
+    padding-top: 20px;
+}
+
+.gallery-column{
+    -ms-flex: 33.3%;
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.gallery-column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border:2px solid #1ace20;
+}
+
+.button {
+    display: flex;
+    margin-left: 1250px;
+    margin-bottom: 40px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: black;
+    background: #d3f4d4;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+}
+

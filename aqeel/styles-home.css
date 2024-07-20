@@ -1,0 +1,197 @@
+/* mission section styling */
+.mission {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+/* video styles */
+.mission video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensure the video is behind other contents */
+}
+
+/* common padding for sections */
+section {
+  padding: 50px 100px;
+}
+
+/* mission1 text styles */
+.mission1 h1 {
+  font-size: 4rem;
+  letter-spacing: 10px;
+}
+.mission1 span {
+  color: black;
+  font-size: 17rem;
+}
+.mission1 p {
+  margin: 00.5rem 0 1rem;
+}
+.mission1 p {
+  align-content: center;
+  text-align: center;
+  font-weight: 300;
+}
+
+/* mission1 container styles */
+.mission1 {
+  width: 70%;
+  margin-top: 60px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+
+  border-radius: 30px;
+  padding: 60px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+/* hover effects for mission1 */
+.mission1:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.89);
+}
+
+/* topic styles */
+.topic {
+  display: flex;
+  align-items: center;
+}
+.topic span {
+  margin-right: 70px;
+  color: rgb(34, 169, 94);
+}
+
+/* gallery section styles */
+.links {
+  background-image: url(nathan-jennings-hus5fEdu8wA-unsplash.jpg);
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* gallery content styling */
+.content {
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.281);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+.content h2 {
+  font-size: 100px;
+}
+
+.links .content a {
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+}
+.content:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.689);
+}
+
+/* shop section styles */
+.shop {
+  background-image: url(composition-eco-friendly-products-green-background.jpg);
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 20px;
+  color: black;
+}
+
+/* shop content style */
+.shop .content1 {
+  font-size: 20px;
+  margin-right: 30px;
+  align-items: center;
+  width: 70%;
+  text-align: left;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.648);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+/* hover effect for shop */
+.content1:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.913);
+}
+.shop .content1 h2 {
+  font-size: 200px;
+}
+
+/* hover effect for content links */
+.linkbox a:hover {
+  color: rgb(228, 228, 228);
+  background-color: rgb(34, 169, 94);
+  border: none;
+}
+/* content link styles */
+.linkbox {
+  display: flex;
+}
+.linkbox a {
+  color: black;
+  padding: 20px;
+  display: solid;
+  border: 0.5px solid black;
+  font-weight: 300;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+/* hover effects for gallery and shop contents */
+.content a:hover {
+  color: rgb(174, 174, 174);
+  border-bottom: 2px solid #9d9d9d;
+}
+
+.content1 a:hover {
+  color: rgb(174, 174, 174);
+  border-bottom: 2px solid #9d9d9d;
+}
+.content1 a {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Linking the Splash Screen Style sheet-->
+    <link rel="stylesheet" type="text/css" href="SplashScreen.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Splash Screen</title>
+  </head>
+  <body>
+    <div class="splash">
+      <div class="splash-screen">
+        <img src="Logo.png" alt="Logo" />
+        <h1>LIFE ON LAND</h1>
+      </div>
+
+      <div class="popup">
+        <div class="std-details">
+          <p>Created by:</p>
+          <div class="std-info">
+            <div class="std-1">
+              <p>Sajithkanthan Chandrakanthan</p>
+              <p>Student ID: 20220488</p>
+              <p>Task: Student 1</p>
+            </div>
+
+            <div class="std-2">
+              <p>Aqeel Anas</p>
+              <p>Student ID: 20230987</p>
+              <p>Task: Student 2</p>
+            </div>
+
+            <div class="std-3">
+              <p>Imad Akram</p>
+              <p>Student ID: 20233166</p>
+              <p>Task: Student 3</p>
+            </div>
+
+            <div class="std-4">
+              <p>Deyanas Hashin</p>
+              <p>Student ID:</p>
+              <p>Task: Student 4</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("load", function () {
+        //function will be executed when the window has finished loading
+        setTimeout(function () {
+          let splash = document.querySelector(".splash");
+          splash.style.display = "none";
+        }, 4000); // splash screen will disappear after 3 seconds
+
+        setTimeout(function () {
+          let heading = document.querySelector("h1");
+          heading.style.opacity = "1";
+          heading.style.transform = "translateY(0)";
+        }, 500); // heading will animate in after 1 second
+
+        setTimeout(function () {
+          let stdDetails = document.querySelector(".std-details");
+          stdDetails.style.opacity = "1";
+          stdDetails.style.transform = "translateY(0)";
+        }, 1500);
+
+        setTimeout(function () {
+          window.location.href = "aqeel/home.html";
+        }, 4000);
+      });
+    </script>
+  </body>
+</html>

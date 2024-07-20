@@ -1,0 +1,137 @@
+/* background color for body */
+body {
+  background-color: rgb(102, 213, 196);
+}
+/* common section padding */
+section {
+  padding: 50px 100px;
+}
+
+/* form container style */
+.form-container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 100%;
+  text-align: left;
+  margin: 20px auto; /* Center the form and add margin on top and bottom */
+  margin-top: 80px;
+  box-sizing: border-box;
+}
+
+/* topic styling */
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+/* required message style */
+.required-fields {
+  color: #d9534f;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* common style for all form fields */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* common style for all labels */
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* common style for all inputs */
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+/* highlight selected input field */
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #007bff;
+}
+
+/* style radio buttons input and rating label */
+.form-group input[type="radio"],
+.form-group label[for^="rating"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+/* style rating label */
+.rating-group label {
+  font-size: 15px;
+  padding-right: 60px;
+  margin-top: 40px;
+  margin-left: -22px;
+}
+/* style for ratig field */
+.rating-group {
+  display: flex;
+}
+
+/* error message style */
+.error {
+  color: #d9534f;
+  font-size: 12px;
+  display: none;
+}
+
+/* hide elements */
+.hidden {
+  display: none;
+}
+
+/* confirmation style */
+#confirmationMessage {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* modal content styling */
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* required star styling */
+.star {
+  color: rgb(201, 104, 104);
+}
+
+/* Basic styling for the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1; /* Sit on top of page */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}

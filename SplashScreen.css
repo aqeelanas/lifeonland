@@ -1,0 +1,75 @@
+body {
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+}
+
+.splash-screen h1 {
+    font-size: 50px;
+    color: #d3f4d4;
+    text-shadow: 2px 2px #000;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity 2s ease-in-out, transform 1s ease-in-out;
+    padding: 25px;
+    border: none;
+    outline: none;
+    background-color: black;
+}
+
+h1.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.splash-screen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(splashbg2.jpg);
+	background-size: cover; 
+	background-position: center;
+	background-repeat: no-repeat; 
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.splash-screen img {
+	width: 150px;
+}
+
+.popup {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #d3f4d4;
+	color: black;
+	text-align: center;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.std-info {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin-bottom: 20px;
+}
+
+.std-details {
+	opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.std-details.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.std-details.visible p {
+    transform: scale(1);
+}

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linking the Common Style sheet-->
+    <link rel="stylesheet" href="navbar css\externalstyles.css" />
+    <!--Linking the Shop Style sheet-->
+    <link rel="stylesheet" href="Shop.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Shop</title>
+  </head>
+
+  <header>
+    <p><img src="navbar css\earth.png" alt="" />LIFE ON LAND</p>
+
+    <ul class="navbar">
+      <li><a href="../aqeel/home.html">home </a></li>
+      <li><a href="../deyanas/gallery.html">gallery </a></li>
+      <li><!-- active link --><a href="Shop.html" class="active">shop </a></li>
+      <li><a href="../deyanas/sitemap.html">sitemap </a></li>
+      <li><a href="../aqeel/feedback.html">feedback </a></li>
+      <li><a href="../imad/team.html">team </a></li>
+      <li><a href="../imad/userProfile.html">profile </a></li>
+    </ul>
+  </header>
+
+  <body>
+    <div class="shop">
+      <div class="shop-intro">
+        <h2>Explore Sustainable Living with LIFE ON LAND</h2>
+        <p>
+          Welcome to LIFE ON LAND, your go-to destination for eco-friendly and
+          sustainable products inspired by our planet's rich biodiversity. Our
+          curated collection features unique items that promote conservation and
+          sustainable living, brought to you by artisans and creators who share
+          our commitment to preserving the beauty of life on land.
+        </p>
+      </div>
+
+      <div class="cart-screen-overlay">
+        <div class="cart-screen">
+          <svg
+            id="close-btn"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <h2>Your Cart</h2>
+          <h1 class="cart-is-empty">Cart is empty</h1>
+          <div class="product-rows"></div>
+          <div class="total">
+            <h1 class="cart-total">TOTAL</h1>
+            <span class="total-price">$0</span>
+            <div class="buyer-details">
+              <form>
+                <label for="fname">Name: </label>
+                <br />
+                <input type="text" name="fname" id="fname" required />
+                <br />
+                <label for="email">Email Address: </label>
+                <br />
+                <input type="email" id="email" name="email" required />
+              </form>
+            </div>
+
+            <div class="cart-buttons">
+              <button class="clear-cart-btn" onclick="clearCart()">
+                CLEAR CART
+              </button>
+              <div onsubmit="return validateForm()">
+                <button
+                  type="submit"
+                  class="purchase-btn"
+                  onclick="if(validateForm()) { showDetails(); document.getElementById('id01').style.display='block'; }"
+                >
+                  PLACE ORDER
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="details">
+        <!--End of cart screen-->
+        <div class="cart-btn">
+          <svg
+            id="cart"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"
+            />
+          </svg>
+          <div class="cart-quantity">0</div>
+        </div>
+      </div>
+
+      <div class="products-view">
+        <!--Products  -->
+        <div class="items-container">
+          <h2>Reusable Bags</h2>
+          <div class="type1-products">
+            <div class="card-1 card">
+              <img
+                class="product-image"
+                src="ShopProducts1\reusablebag1.png"
+                alt="Reusable Bag"
+              />
+              <div class="product-name">Tote Bag - LOS ANGELES</div>
+              <div class="product-price">$25</div>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="card-2 card">
+              <img
+                class="product-image"
+                src="ShopProducts1\reusablebag2.png"
+                alt="Reusable Bag"
+              />
+              <div class="product-name">Tote Bag - DIY CANVAS</div>
+              <div class="product-price">$15</div>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="card-3 card">
+              <img
+                class="product-image"
+                src="ShopProducts1\reusablebag3.png"
+                alt="Reusable Bag"
+              />
+              <div class="product-name">Tote Bag - NEW YORKER</div>
+              <div class="product-price">$16</div>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="card-4 card">
+              <img
+                class="product-image"
+                src="ShopProducts1\reusablebag4.png"
+                alt="Reusable Bag"
+              />
+              <div class="product-name">Tote Bag - SMILE</div>
+              <div class="product-price">$12</div>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="card-5 card">
+              <img
+                class="product-image"
+                src="ShopProducts1\reusablebag5.png"
+                alt="Reusable Bag"
+              />
+              <div class="product-name">Tote Bag - I LOVE SRI LANKA</div>
+              <div class="product-price">$14</div>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+          </div>
+          <br />
+          <hr class="line-breaker" />
+
+          <h2>Bamboo Products</h2>
+          <div class="type2-products">
+            <div class="card-6 card">
+              <img
+                class="product-image"
+                src="ShopProducts1\bamboo1.png"
+                alt="Bamboo Product"
+              />
+              <div class="product-name">Bamboo Tooth Brush</div>
+              <div class="product-price">$5</div>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="card-7 card">
+              <img
+                class="product-image"
+                src="ShopProducts1\bamboo2.png"
+                alt="Bamboo Product"
+              />
+              <div class="product-name">Bamboo Charcoal Bag</div>
+              <div class="product-price">$10</div>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="card-8 card">
+              <img
+                class="product-image"
+                src="ShopProducts1\bamboo3.png"
+                alt="Bamboo Product"
+              />
+              <div class="product-name">Bamboo Spoon</div>
+              <div class="product-price">$7</div>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="card-9 card">
+              <img
+                class="product-image"
+                src="ShopProducts1\bamboo4.png"
+                alt="Bamboo Product"
+              />
+              <div class="product-name">Bamboo Comb</div>
+              <div class="product-price">$6</div>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="card-10 card">
+              <img
+                class="product-image"
+                src="ShopProducts1\bamboo5.png"
+                alt="Bamboo Product"
+              />
+              <div class="product-name">Bamboo Paper Towel</div>
+              <div class="product-price">$9</div>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+          </div>
+          <br />
+
+          <hr class="line-breaker" />
+
+          <h2>Recycled Paper Products</h2>
+          <div class="type3-products">
+            <div class="card-11 card">
+              <img
+                class="product-image"
+                src="ShopProducts1\recycledpaper1.png"
+                alt="Recycled Paper Product"
+              />
+              <div class="product-name">Recycled Paper Basket</div>
+              <div class="product-price">$162</div>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="card-12 card">
+              <img
+                class="product-image"
+                src="ShopProducts1\recycledpaper2.png"
+                alt="Recycled Paper Product"
+              />
+              <div class="product-name">Recycled Paper Pen Holder</div>
+              <div class="product-price">$130</div>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="card-13 card">
+              <img
+                class="product-image"
+                src="ShopProducts1\recycledpaper3.png"
+                alt="Recycled Paper Product"
+              />
+              <div class="product-name">Recycled Paper Bowl</div>
+              <div class="product-price">$120</div>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="card-14 card">
+              <img
+                class="product-image"
+                src="ShopProducts1\recycledpaper4.png"
+                alt="Recycled Paper Product"
+              />
+              <div class="product-name">Recycled Paper Dustbin</div>
+              <div class="product-price">$162</div>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="card-15 card">
+              <img
+                class="product-image"
+                src="ShopProducts1\recycledpaper5.png"
+                alt="Recycled Paper Product"
+              />
+              <div class="product-name">Recycled Paper Long Basket</div>
+              <div class="product-price">$160</div>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="checkout" id="id01">
+      <span
+        onclick="document.getElementById('id01').style.display='none'"
+        class="close"
+        title="Close Modal"
+        >&times;</span
+      >
+      <form class="checkout-content" onsubmit="return validateCheckForm()">
+        <div class="form-container">
+          <h1>Order Summary</h1>
+          <p>Reference: LIFE ON LAND - Order</p>
+          <p id="total-price-text">Total Price:</p>
+          <br />
+          <hr class="break" />
+          <div class="payment-details">
+            <h3>Payment Details</h3>
+            <label for="ccnum"
+              >Card Number<span class="required-mark">*</span></label
+            >
+            <input
+              type="text"
+              id="ccnum"
+              name="cardnumber"
+              placeholder="1111-2222-3333-4444"
+              maxlength="16"
+              size="16"
+              required
+            />
+            <br />
+            <label for="cname"
+              >Card Holder's Name<span class="required-mark">*</span></label
+            >
+            <input
+              type="text"
+              id="cname"
+              name="cardname"
+              placeholder="John More Doe"
+              required
+            />
+            <br />
+            <div class="card-info">
+              <div class="expiry-details">
+                <div>
+                  <label for="expmonth"
+                    >Expiry Month<span class="required-mark">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="expmonth"
+                    name="expmonth"
+                    placeholder="MM"
+                    maxlength="2"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="expyear"
+                    >Expiry Year<span class="required-mark">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="expyear"
+                    name="expyear"
+                    placeholder="YY"
+                    maxlength="2"
+                    size="2"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="cname"
+                  >Security Code<span class="required-mark">*</span></label
+                >
+                <input
+                  type="text"
+                  id="cvv"
+                  name="cvv"
+                  placeholder="259"
+                  maxlength="3"
+                  size="3"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr class="break" />
+
+          <div class="billing-address">
+            <h3>Billing Address</h3>
+            <label for="address1"
+              >Address 1<span class="required-mark">*</span></label
+            >
+            <input
+              type="text"
+              id="address1"
+              name="address1"
+              placeholder="542 W. 15th Street"
+              required
+            />
+            <br />
+            <label for="address2">Address 2</label>
+            <input
+              type="text"
+              id="address2"
+              name="address2"
+              placeholder="542 W. 15th Street"
+            />
+            <br />
+            <label for="city"
+              >Town/City<span class="required-mark">*</span></label
+            >
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="New York"
+              required
+            />
+            <br />
+            <label for="state">State/Region</label>
+            <input type="text" id="state" name="state" placeholder="Central" />
+            <br />
+            <label for="zipcode"
+              >Passcode/Zip Code<span class="required-mark">*</span></label
+            >
+            <input
+              type="text"
+              id="zipcode"
+              name="zipcode"
+              placeholder="W1W 6UW"
+              required
+            />
+            <br />
+            <label for="country"
+              >Country<span class="required-mark">*</span></label
+            >
+            <input
+              type="text"
+              id="country"
+              name="country"
+              placeholder="Australia"
+              required
+            />
+          </div>
+
+          <hr class="break" />
+
+          <div class="contact-details">
+            <div class="contact-info">
+              <div class="contact-info-view">
+                <h3>Contact Details</h3>
+                <label>
+                  <select id="menu">
+                    <option value="edit" selected>Edit</option>
+                    <option value="close">Close</option>
+                  </select>
+                </label>
+              </div>
+              <div id="output"></div>
+              <br />
+            </div>
+
+            <hr class="break" />
+          </div>
+          <div class="clear">
+            <button
+              class="cancel-button"
+              type="button"
+              onclick="document.getElementById('id01').style.display='none'"
+            >
+              Cancel Payment
+            </button>
+            <button class="payment-button" id="make-payment-btn">
+              Make Payment
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+
+  <hr />
+
+  <!--footer-->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h2>About Us</h2>
+        <p>
+          We are dedicated to promoting sustainability and the conservation of
+          terrestrial ecosystems. Join us in making a positive impact on our
+          planet.
+        </p>
+      </div>
+      <div class="footer-section contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@land.com</p>
+        <p>Phone: +982255252252</p>
+      </div>
+      <div class="footer-section pageeditor">
+        <h2><a href="PageEditor_Student1.html">Page Editor</a></h2>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 LIFEONLAND| Designed by
+      <a href="PageEditor_Student1.html" target="_blank"
+        >Sajithkanthan Chandrakanthan</a
+      >
+    </div>
+
+    <script src="Shop.js"></script>
+  </footer>
+</html>

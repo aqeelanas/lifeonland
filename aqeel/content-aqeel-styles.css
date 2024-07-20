@@ -1,0 +1,112 @@
+/* style for quick links */
+.link {
+  display: flex;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.link a {
+  margin: 30px;
+  padding: 20px;
+  color: black;
+  text-align: center;
+  border: 0.5px solid black;
+  border-radius: 30px;
+}
+/* link hover effects */
+.link a:hover {
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+
+/* subtopic 1 styles */
+.section1 {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* subtopic 1 content styling */
+.section1 .content {
+  padding: 30px;
+  width: 50%;
+  background-color: rgb(232, 249, 209);
+}
+
+/* iimage styles for subtopic 1 */
+.section1 img {
+  width: 40%;
+  border-radius: 0px;
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+/* hover effect */
+.section1 img:hover {
+  transform: scale(1.1);
+}
+
+/* subtopic 2 style */
+.section2 {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(232, 249, 209);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* content style subtopic 2 */
+.section2 .content {
+  padding: 30px;
+  width: 50%;
+  background-color: white;
+}
+/* image style for subtopic 2 */
+.section2 img {
+  width: 30%;
+  border-radius: 0px;
+  border: 2px solid rgb(0, 0, 0);
+
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+/* hover effect */
+.section2 img:hover {
+  transform: scale(1.1);
+}
+
+/* topic styles */
+.topic {
+  margin-top: 100px;
+  display: flex;
+
+  justify-content: center;
+}
+
+/* go to top button styling */
+.top {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+/* hover effect */
+.top:hover {
+  background-color: #3a3a3a;
+  color: #ffffff;
+  border: 1px solid black;
+}

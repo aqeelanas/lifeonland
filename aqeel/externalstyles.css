@@ -1,0 +1,125 @@
+/* import font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* page styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+
+/* scrollbar styling */
+html::-webkit-scrollbar {
+  width: 10px;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5rem;
+}
+
+/* header styling */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px 100px;
+  border-bottom: 0.5px solid black;
+}
+
+/* navbar styling */
+.navbar {
+  display: flex;
+}
+.navbar li {
+  position: relative;
+}
+.navbar li a {
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: black;
+  font-weight: 300;
+}
+.navbar li a.active {
+  color: #9d9d9d;
+  border-bottom: 2px solid #9d9d9d;
+}
+.navbar li a:hover {
+  background-color: #cbcbcb;
+  border-radius: 10px;
+}
+header img {
+  max-width: 40px;
+}
+li img {
+  max-width: 10px;
+}
+
+/* footer styling */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding-top: 20px;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding-left: 180px;
+}
+
+.footer-section h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #222;
+}
+
+.footer-container {
+  flex-direction: row;
+}
+
+.footer-section {
+  text-align: left;
+}
+
+.footer a {
+  color: white;
+}
+.footer a:hover {
+  color: #9d9d9d;
+  border-bottom: 2px solid #9d9d9d;
+}

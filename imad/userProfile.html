@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Information Collection</title>
+    <link rel="stylesheet" href="userProfile.css" />
+  </head>
+  <body>
+    <header>
+      <p><img src="earth.png" alt="" />LIFE ON LAND</p>
+
+      <ul class="navbar">
+        <li>
+          <a href="../aqeel/home.html">home </a>
+        </li>
+        <li>
+          <a href="../deyanas/gallery.html">gallery </a>
+        </li>
+        <li>
+          <a href="../Saji CW/Shop.html">shop </a>
+        </li>
+        <li>
+          <a href="../deyanas/sitemap.html">sitemap </a>
+        </li>
+        <li>
+          <a href="../aqeel/feedback.html">feedback </a>
+        </li>
+        <li>
+          <a href="team.html">team </a>
+        </li>
+        <li>
+          <a href="userProfile.html" class="active">profile </a>
+        </li>
+      </ul>
+    </header>
+
+    <div class="overlay">
+      <video autoplay loop muted playsinline class="back-video">
+        <source src="userProfile.mp4" type="video/mp4" />
+      </video>
+
+      <div class="heading-container">
+        <h1>Welcome to the user profile</h1>
+        <button id="beginButton">Begin!</button>
+      </div>
+    </div>
+
+    <div class="container hidden">
+      <h2>User Profile</h2>
+      <div id="progressbar" class="hidden">
+        <div id="progress"></div>
+      </div>
+
+      <div id="form" class="hidden form-content">
+        <div class="form-column">
+          <h3>Personal Information</h3>
+          <div id="firstName">First Name:</div>
+          <div id="lastName">Last Name:</div>
+          <div id="age">Age:</div>
+          <div id="gender">Gender:</div>
+          <div id="personal">Additional Info:</div>
+          <button id="updatePersonal" class="hidden">
+            Update Personal Info
+          </button>
+
+          <h3>Qualification</h3>
+          <div id="study">Field of Study:</div>
+          <div id="degree">Degree:</div>
+          <div id="university">University/Institution:</div>
+          <div id="year">Year:</div>
+        </div>
+        <div class="form-column">
+          <h3>General questions</h3>
+          <div id="update">Receive new updates:</div>
+          <div id="goal">Goals:</div>
+          <div id="user">First-time user:</div>
+          <div id="survey">Providing feedbacks:</div>
+          <button id="updateGeneral" class="hidden">
+            Update General Questions
+          </button>
+
+          <h3>Contact</h3>
+          <div id="country">Country:</div>
+          <div id="town">Town:</div>
+          <div id="mobile">Mobile:</div>
+          <div id="email">Email:</div>
+          <div id="agree">Agree to Terms:</div>
+          <button id="updateContact" class="hidden">
+            Update Personal Info
+          </button>
+        </div>
+      </div>
+      <div class="button-container">
+        <button id="submitButton" class="hidden" onclick="submitForm()">
+          Submit
+        </button>
+        <button id="reset" class="hidden" onclick="resetForm()">Reset</button>
+      </div>
+    </div>
+
+    <div id="popup">
+      <p>Thank you for submitting!</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h2>About Us</h2>
+          <p>
+            We are dedicated to promoting sustainability and the conservation of
+            terrestrial ecosystems. Join us in making a positive impact on our
+            planet.
+          </p>
+        </div>
+        <div class="footer-section contact">
+          <h2>Contact Us</h2>
+          <p>Email: support@land.com</p>
+          <p>Phone: +982255252252</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2024 LIFEONLAND| Designed by
+        <a href="editor.html" target="_blank">Imad Akram</a>
+      </div>
+    </footer>
+
+    <script src="userProfile.js"></script>
+  </body>
+</html>

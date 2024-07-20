@@ -1,0 +1,329 @@
+/* import font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* page styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+
+/* scrollbar styling */
+html::-webkit-scrollbar {
+  width: 10px;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5rem;
+}
+
+/* header styling */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px 100px;
+}
+
+/* navbar styling */
+.navbar {
+  display: flex;
+}
+.navbar li {
+  position: relative;
+}
+.navbar li a {
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: black;
+  font-weight: 300;
+}
+.navbar li a.active {
+  color: #9d9d9d;
+  border-bottom: 2px solid #9d9d9d;
+}
+.navbar li a:hover {
+  background-color: #cbcbcb;
+  border-radius: 10px;
+}
+header img {
+  max-width: 40px;
+}
+li img {
+  max-width: 10px;
+}
+
+body {
+  background-color: rgb(169, 225, 194);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  width: 100vw;
+}
+
+.overlay{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(147, 133, 212, 0.3),rgba(147, 133, 212, 0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.heading-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 20px; /* Padding around content */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center;
+}
+
+.heading-container h1 {
+  font-size: 80px;
+  color: rgb(34, 169, 94); /* Changed to a darker color for contrast */
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.heading-container h1:hover {
+  -webkit-text-stroke: 2px #333; /* Changed to a darker color for contrast */
+  color: transparent;
+}
+
+.heading-container button {
+  padding: 10px 20px; /* Button padding */
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 50px; 
+  font-family: "Montserrat";
+}
+
+.heading-container button:hover {
+  background-color: rgb(34, 169, 94);
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px; /* Reduced padding for smaller size */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Adjusted width for better visibility on smaller screens */
+  max-width: 900px; /* Adjusted maximum width */
+  text-align: center;
+  overflow-y: auto;
+  max-height: calc(100vh - 150px); /* Adjusted max-height to fit better within viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 150px;
+}
+
+h2 {
+  margin-bottom: 10px; /* Reduced margin for smaller size */
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#progressbar {
+  width: 100%;
+  background-color: #ddd;
+  height: 15px; /* Reduced height */
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+#progress {
+  background-color: #4caf50;
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 15px; /* Adjusted line-height */
+  color: white;
+  display: block;
+}
+
+.form-content {
+  display: flex;
+  flex-wrap: nowrap; /* No wrapping, display columns side by side */
+  justify-content: space-between; /* Space out columns */
+  width: 100%; /* Full width of container */
+}
+
+.form-column {
+  width: 48%; /* Each column takes up 48% of the container's width */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start of the column */
+}
+
+.form-column h3 {
+  width: 100%;
+  text-align: left;
+  margin-top: 5px; /* Reduced margins */
+  margin-bottom: 5px;
+  font-size: 1em; /* Reduced font size */
+}
+
+.form-column div {
+  margin-top: 5px;
+  padding: 6px; /* Reduced padding */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 0.8em; /* Smaller font size */
+  width: 90%; /* Ensure the div takes the full width of the column */
+}
+
+button {
+  margin-top: 10px;
+  padding: 6px 12px; /* Reduced padding */
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px; /* Reduced font size */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.button-container {
+  text-align: center; /* Center-align the buttons */
+  margin-top: 20px; /* Add margin to separate from the form */
+}
+
+.button-container button {
+  margin: 0 10px; /* Add margin around buttons for spacing */
+}
+
+/* Popup styles */
+#popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding-left: 180px;
+}
+
+.footer-section h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #222;
+}
+
+.footer-container {
+  flex-direction: row;
+}
+
+.footer-section {
+  text-align: left;
+}
+
+.footer a {
+  color: white;
+}
+.footer a:hover {
+  color: #9d9d9d;
+  border-bottom: 2px solid #9d9d9d;
+}
+
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -99;
+    object-fit: cover;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+
